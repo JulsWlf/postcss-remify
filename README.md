@@ -8,13 +8,13 @@
 
 ```css
 .foo {
-    /* Input example */
+  font-size: rem( 16 );
 }
 ```
 
 ```css
 .foo {
-  /* Output example */
+  font-size: 1rem;
 }
 ```
 

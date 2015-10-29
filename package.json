@@ -10,7 +10,7 @@
   ],
   "author": "Eduardo <eduardo@oak.mx>",
   "license": "MIT",
-  "repository": "EduardoRT/postcss-remify",
+  "repository": "OakMx/postcss-remify",
   "bugs": {
     "url": "https://github.com/EduardoRT/postcss-remify/issues"
   },

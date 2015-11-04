@@ -20,7 +20,6 @@ module.exports = postcss.plugin('postcss-remify', function (opts) {
             }
 
             var index = decl.value.indexOf('(');
-            var last = decl.value.indexOf(')');
             var last  = decl.value.indexOf(')');
             var value = decl.value.slice(++index, last);
             value     = value.match(/\d+/)[0];

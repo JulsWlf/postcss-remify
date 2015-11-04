@@ -1,6 +1,6 @@
 {
   "name": "postcss-remify",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "PostCSS plugin This plugin will transform all rem( px ); declarations into it's rem equivalent.",
   "keywords": [
     "postcss",

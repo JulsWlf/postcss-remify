@@ -24,6 +24,13 @@ module.exports = postcss.plugin('postcss-remify', function (opts) {
             var value = decl.value.slice(++index, last);
             value     = value.match(/\d+/)[0];
 
+            if (opts.fallback) {
+              decl.cloneBefore({
+                prop  : 'font-size',
+                value : value + 'px'
+              });
+            }
+
             decl.value = value / base + 'rem';
         });
     };

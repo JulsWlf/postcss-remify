@@ -1,7 +1,15 @@
 var postcss = require('postcss');
 
 module.exports = postcss.plugin('postcss-remify', function (opts) {
-    opts = opts || {};
+    opts = opts || { base : 16, fallback : false };
+
+    if (typeof opts.base === 'undefined') {
+      opts.base = 16;
+    }
+
+    if (typeof opts.fallback === 'undefined') {
+      opts.fallback = false;
+    }
 
     return function (css) {
         css.walkDecls( function (decl) {

@@ -13,7 +13,7 @@ module.exports = postcss.plugin('postcss-remify', function (opts) {
 
     return function (css) {
         css.walkDecls( function (decl) {
-            var base = 16;
+            var base = opts.base;
 
             if (!decl.value || decl.value.indexOf('rem(') === -1) {
                 return;
